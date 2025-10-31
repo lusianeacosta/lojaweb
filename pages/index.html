@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>MQ - MULTIMARCAS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
+
+  <!-- <link rel="stylesheet" href="/libs/css/bootstrap.min.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/root.css" />
+  <!-- <link rel="stylesheet" href="/css/default.css"> -->
+  <link rel="stylesheet" href="../src/styles/header.css" />
+  <link rel="stylesheet" href="../src/styles/colors.css" />
+  <link rel="stylesheet" href="../src/styles/style.css" />
+  <link rel="stylesheet" href="../src/styles/footer.css" />
+</head>
+
+<body class="black">
+  <main>
+    <header class="row">
+      <div class="logo col-2">
+        <img src="/src/public/ChatGPTImage.png" alt="logomarca MQ Multimarcas" height="" />
+      </div>
+      <div class="localizacao col-2">
+        <div>
+          <i class="fa fa-map-marker-alt"></i>
+          <!-- <img src="./img/map-svgrepo-com.svg" alt=""> -->
+        </div>
+        <div>
+          <span>Olá</span>
+          <span>Selecione o endereço</span>
+        </div>
+      </div>
+      <div class="pesquisa col-4">
+        <form action="" class="formPesquisa">
+          <label for="selectTipo"></label>
+          <select name="tipoProduto" id="selectTipo" title="Tipo do produto">
+            <option value="0" selected>Todos</option>
+            <option value="1">Eletrônicos</option>
+            <option value="2">Casa</option>
+          </select>
+
+          <label for="nomeProduto"></label>
+          <input type="text" name="nomeProduto" id="nomeProduto" title="Nome do Produto"
+            placeholder="Nome do produto" />
+
+          <!-- <label for=""></label> -->
+          <!-- <input type="submit" value=""> -->
+          <button type="submit" title="Fazer Pesquisa">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="login col-2">
+        <span>
+          <a href="../pages/login_user.html" title="Acessar o login">
+            Olá, faça seu login
+          </a>
+        </span>
+        <span> Contas e Listas </span>
+      </div>
+      <div class="pedidos col-1">
+        <span>Devoluções</span>
+        <span>e Pedidos</span>
+      </div>
+      <div class="carrinho col-1">
+        <span>0</span>
+        <span class="car-icon">
+          <i class="fab fa-opencart"></i>
+        </span>
+      </div>
+    </header>
+
+    <nav class="row bg-blue">
+      <ul class="menu white col-8">
+        <li>
+          <button title="menu">
+            <i class="fa fa-solid fa-bars"></i>
+            <span>Todos</span>
+          </button>
+        </li>
+        <li>
+          <a href=""> Venda na MQ Multimarcas </a>
+        </li>
+        <li>
+          <a href=""> Mais Vendidos </a>
+        </li>
+        <li>
+          <a href="">
+            Prime
+            <i class="fa fa-solid fa-caret-down"></i>
+          </a>
+        </li>
+      </ul>
+
+
+    <div class="container carousel"></div>
+
+    <section class="container main-produto">
+      <div class="produtos row">
+        <div class="produto col-lg-3 col-sm-6 col-12">
+          <div class="produto-comum">
+            <h2>Vestuario masculino</h2>
+            <a href="">
+              <div class="foto">
+                <img src="../src/public/produtos/bermudas.jpg" alt="roupas" />
+              </div>
+              <div>
+                <p class="valor-desconto">R$ 52,990</p>
+                <p class="valor gray">De:<span>R$ 67,99</span></p>
+                <p class="descricao">
+                  Bermuda Masculina Casual Conforto – Estilo </p>
+              </div>
+            </a>
+
+            <p></p>
+            <div class="foto 2">
+              <img src="../src/public/produtos/IMG-20241105-WA0005.jpg" alt="produto item 1" width="35%" />
+              <p></p>
+              <p class="valor-desconto">R$ 65,99</p>
+              <p class="valor gray">De:<span>R$ 75,99</span></p>
+              <p class="descricao">
+                Bermuda Verão
+            </div>
+
+            <div class="foto 3">
+              <img src="../src/public/produtos/IMG-20241105-WA0008.jpg" alt="produto item 2" width="35%" />
+              <p></p>
+              <p class="valor-desconto">R$ 70,99</p>
+              <p class="valor gray">De:<span>R$ 89,99</span></p>
+              <p class="descricao">
+                Bermuda Praia
+            </div>
+
+            <div class="foto 4">
+              <img src="../src/public/produtos/IMG-20241105-WA0013.jpg" alt="produto item 2" width="35%" />
+              <p></p>
+              <p class="valor-desconto">R$ 80,99</p>
+              <p class="valor gray">De:<span>R$ 100,99</span></p>
+              <p class="descricao">
+                Camisa gola U
+            </div>
+
+            <div class="foto 5">
+              <img src="../src/public/produtos/IMG-20241216-WA0098.jpg" alt="produto item 2" width="25%" />
+              <p></p>
+              <p class="valor-desconto">R$ 70,99</p>
+              <p class="valor gray">De:<span>R$ 89,99</span></p>
+              <p class="descricao">
+                Regata Esportiva Basquete
+            </div>
+
+            <p class="saiba-mais">
+              <a href=""></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="produto col-lg-3 col-sm-6 col-12">
+          <div class="produto-noticia">
+            <h2>Notícias</h2>
+            <div class="py-1">
+              <img src="../src/public/noticias/AMZN_Flexible_Desktop_Template_Card_379x304._SY304_CB612361999_.jpg" alt=""
+                width="80%" />
+            </div>
+            <p class="saiba-mais">
+              <a href=""> saiba mais </a>
+            </p>
+          </div>
+        </div>
+
+             <div class="produto col-lg-3 col-sm-6 col-12">
+          <div class="produto-MQ Multimarcas">
+            <h2>
+              Eletrônicos <br />
+              MQ Multimarcas
+            </h2>
+            <img src="../src/public/produtos/alexa.jpg" alt="produto MQ Multimarcas" width="100%" class="py-1" />
+            <div>
+              <p class="descricao">Alexa </p>
+              <p class="valor-desconto">R$ 299,99</p>
+              <p class="valor gray">De:<span>R$ 386,99</span></p>
+            </div>
+
+            <div class="py-1">
+              <img src="../src/public/produtos/ipad.jpg" alt="produto item 3" width="80%" />
+              <p>Celulares/Ipads/Tablets</p>
+              <p class="valor-desconto">R$ 1.399,79</p>
+              <p class="valor gray">De:<span>R$ 1.858,49</span></p>
+              <p class="descricao">
+            </div>
+           
+           <p>Higiene e Beleza</p>
+            <div class="py-1">
+              <img src="../src/public/produtos/cuide-se-bem hidratantes.JPG" alt="produto item 1" width="80%" />
+              <p></p>
+              <p class="valor-desconto">R$ 87,99</p>
+              <p class="valor gray">De:<span>R$ 58,49</span></p>
+              <p class="descricao">
+            </div>
+
+            <div class="mx-1 py-1">
+              <img src="../src/public/produtos/nina secrets.JPG" alt="produto item 2" width="80%" />
+              <p></p>
+              <p class="valor-desconto">R$ 58,99</p>
+              <p class="valor gray">De:<span>R$ 75,49</span></p>
+              <p class="descricao">
+            </div>
+
+            <!-- <p class="saiba-mais">
+              <a href=""> saiba mais </a>
+            </p> -->
+          </div>
+        </div>
+
+        <div class="produto col-lg-3 col-sm-6 col-12">
+          <div class="produto-item">
+            <div>Entreterimento</div>
+            <h2>Lançamento Cinemark - Cupom desconto</h2>
+            <div class="py-1">
+              <img src="../src/public/produtos/entreterimento.jpg" alt=""
+                width="80%" />
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <img src="../src/public/logo facebook.png" alt="Facebook" />
+        </a>
+  
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="../src/public/logo instagram.jpg" alt="Instagram" />
+        </a>
+      </div>
+  
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.473748337015!2d-51.20483748487994!3d-30.01322558181811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979d07741e5f5%3A0x1e5688c5019eb2fe!2sPorto%20Alegre%2C%20RS%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1708137600000!5m2!1spt-BR!2sus" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  
+    <p class="footer-copy">© 2025 MQ Multimarcas.</p>
+  </footer>
+  
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+</html>
