@@ -6,7 +6,7 @@ body {
     /* font-size: var(--fs-12); */
     font-size: 12px;
     /*12px ~ 1.0em*/
-    background-color: hsla(297, 52%, 92%, 0.966)
+    background-color: hwb(297 88% 4% / 0.966)
  }
 
 h1 {
@@ -58,7 +58,7 @@ nav .promocional img {
 /* Carousel */
 .carousel {
     height: 100%;
-    min-height: 500px;
+    min-height: 250px;
     background-image: url(/img/banner/61vMcktz42L._SX3000_.jpg);
     background-position: top;
     background-size: cover;
@@ -98,16 +98,18 @@ nav .promocional img {
 .produto-noticia,
 .produto-categoria,
 .produto-item {
-    padding: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
     background-color: var(--gray);
     /* height: 100%;
     min-height: 300px; */
-    height: 330px;
+    height: 250px;
     position: relative;
 }
 
 .produto-comum .foto {
-    height: 80%;
+    
     overflow: hidden;
     text-align: center;
 }
@@ -118,7 +120,8 @@ nav .promocional img {
 }
 
 .produto-item div {
-    background-color: aqua;
+    font-size: var(--fs-md);
+    font-weight: 600;
     height: 70%;
     min-height: 50px;
     max-height: 80px;
