@@ -19,9 +19,16 @@ h2 {
     font-weight: 600;
 }
 
-h3 {
-    font-size: var(--fs-xs);
+.foto h2 {
     font-weight: 600;
+    color: #4B0082;              
+    font-weight: bold;           
+}
+
+.foto3 h2 {
+    font-weight: 600;
+    color: #4B0082;              
+    font-weight: bold;           
 }
 
 p {
