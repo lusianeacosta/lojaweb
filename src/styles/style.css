@@ -94,106 +94,79 @@ nav .promocional img {
     width: 100%;
 }
 
-.produto-comum,
-.produto-MQmultimarcas,
-.produto-noticia,
-.produto-categoria,
-.produto-item {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 8px;
-    background-color: var(--gray);
-    /* height: 100%;
-    min-height: 300px; */
-    height: 250px;
-    position: relative;
-}
-
-.produto-comum .foto {
-    
-    overflow: hidden;
-    text-align: center;
-}
-
-.produto-noticia .foto {
-    
-    overflow: hidden;
-    text-align: center;
-}
-
-.produto-amazon div {
-    width: 30%;
-    float: left;
-}
-
-.produto-item div {
-    font-size: var(--fs-md);
+/* Lista de produtos em grade */
+.titulo-secao {
+    font-size: 1.8rem;
     font-weight: 600;
-    height: 70%;
-    min-height: 50px;
-    max-height: 80px;
-    margin-bottom: 15px;
+    text-align: center;
+    color: #2f1b3d;
+    margin-bottom: 32px;
 }
 
-.saiba-mais {
+.grade-produtos {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
+}
+
+.card-produto img {
     width: 100%;
-    padding: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    height: 220px;
+    object-fit: cover;
 }
 
-.saiba-mais a {
-    color: var(--green);
+.info-produto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nome-produto {
+    font-size: 1.1rem;
     font-weight: 600;
+    color: #4B0082;
+    margin: 0;
 }
 
-.saiba-mais a:hover {
-    color: var(--orange);
-    text-decoration: underline;
+.preco-atual {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2f1b3d;
+    margin: 0;
 }
 
-/* Carrinho */
+.preco-anterior {
+    font-size: 0.9rem;
+    color: #6f6f6f;
+    margin: 0;
+}
+
+.preco-anterior span {
+    text-decoration: line-through;
+}
+
 .car-icon {
     font-size: 32px;
 }
 
-.produto-categoria-carousel-item {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    height: 250px;
-}
-
-.produto-categoria-carousel a {
-    color: var(--blue);
-    font-size: 12px;
-}
-
-.produto-categoria-carousel {
-    position: relative;
-}
-
-.setas {
-    position: absolute;
-    top: 100px;
-    color: var(--white);
-    background-color: #ffffff55;
-    width: 50px;
-    height: 100px;
-    padding-top: 25px;
-    padding-left: 5px;
-}
-
-.setas i {
-    font-size: 54px;
-    color: var(--white);
-}
-
-.setas-right {
-    right: 5px;
-}
-
-.setas-left {
-    left: 5px;
+@media (min-width: 1200px) {
+    .grade-produtos {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
