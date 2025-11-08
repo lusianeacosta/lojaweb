@@ -25,12 +25,6 @@ h2 {
     font-weight: bold;           
 }
 
-.foto3 h2 {
-    font-weight: 600;
-    color: #4B0082;              
-    font-weight: bold;           
-}
-
 p {
     margin: 5px;
 }
@@ -116,6 +110,12 @@ nav .promocional img {
 }
 
 .produto-comum .foto {
+    
+    overflow: hidden;
+    text-align: center;
+}
+
+.produto-noticia .foto {
     
     overflow: hidden;
     text-align: center;
